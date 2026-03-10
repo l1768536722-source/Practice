@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int a,AH,AM,AS,BH,BM,BS;
+	cin >> a;
+	while (a--) {
+		cin >> AH >> AM >> AS >> BH >> BM >> BS;
+		cout << (AH + BH) + ((AS + BS) / 60 + AM + BM) / 60 << ' ' << ((AS + BS) / 60 + AM + BM) % 60 << ' ' << (AS + BS) % 60 <<endl;
+
+	}
+	return 0;
+}
